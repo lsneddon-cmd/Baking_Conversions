@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Window from '../Window.jsx';
+import Window from '../Window/Window.jsx';
 
 const App = () => {
   return (
