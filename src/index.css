@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap');
+
+body {
+  font-family: 'Baloo 2', 'sans-serif', 'Arial';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: repeating-linear-gradient(
+    45deg, 
+    hsla(40,100%,60%, 0.3), 
+    hsla(40,100%,60%, 0.3) 10vw, 
+    hsla(204,33.3%,50%,0.3) 0, 
+    hsla(204,33.3%,50%,0.3) 20vw);
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
