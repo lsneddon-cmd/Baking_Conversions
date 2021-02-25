@@ -11,6 +11,7 @@ const Window = () => {
   const [unit, setUnit] = useState("unselected");
   const [conversionSystem, setConversionSystem] = useState("unselected");
   const [amount, setAmount] = useState(0);
+  const [ calculation, setCalculation ] = useState(0);
 
   const reset = () => {
     setWindow("Ingredients");
@@ -30,7 +31,17 @@ const Window = () => {
     case "Value":
       return <Value amount={amount} handleClick={setAmount} updateWindow={setWindow} />;
     case "Output":
-      return <Output handleClick={reset} />;
+      return (
+         <Output 
+          calculatedValue={calculation} 
+          ing={ingredient}
+          unit={unit}
+          sys={conversionSystem}
+          amount={amount}
+          onCalculate={setCalculation} 
+          handleClick={reset} 
+        />
+      );
     default:
       return <Ingredients />;
   }
