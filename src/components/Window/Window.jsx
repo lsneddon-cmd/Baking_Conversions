@@ -7,7 +7,7 @@ import Calculate from "../Windows/Calculate";
 import Output from "../Windows/Output";
 
 const Window = () => {
-  const [currentWindow, setWindow] = useState("Toggle");
+  const [currentWindow, setWindow] = useState("Value");
 
   switch (currentWindow) {
     case "Ingredients":
