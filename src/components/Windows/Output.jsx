@@ -1,14 +1,12 @@
-import React from 'react';
+import React from "react";
 
-class Output extends React.Component{
-  render(){
-    return(
+class Output extends React.Component {
+  render() {
+    return (
       <div className="window-container">
         <p className="subheading">Converted!</p>
         <p></p>
-        <button
-          
-        >Reset</button>
+        <button>Reset</button>
       </div>
     );
   }

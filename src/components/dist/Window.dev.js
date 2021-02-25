@@ -1,13 +1,15 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+  value: true,
 });
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 // import Toggle from '../Toggle/Toggle';
 // import Ingredients from '../Ingredients/Ingredients';
@@ -47,7 +49,6 @@ var Window = function Window() {
 //     return this.renderElement(this.state.element);
 //   }
 // }
-
 
 var _default = Window;
 exports.default = _default;

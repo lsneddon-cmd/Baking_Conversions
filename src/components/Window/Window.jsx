@@ -1,32 +1,30 @@
-import React, { useState } from 'react';
-import Ingredients from '../Windows/Ingredients.jsx';
-import Unit from '../Windows/Unit';
-import Toggle from '../Windows/Toggle';
-import Value from '../Windows/Value';
-import Calculate from '../Windows/Calculate';
-import Output from '../Windows/Output';
+import React, { useState } from "react";
+import Ingredients from "../Windows/Ingredients.jsx";
+import Unit from "../Windows/Unit";
+import Toggle from "../Windows/Toggle";
+import Value from "../Windows/Value";
+import Calculate from "../Windows/Calculate";
+import Output from "../Windows/Output";
 
 const Window = () => {
-
-  const [ currentWindow, setWindow ] = useState("Unit");
-
+  const [currentWindow, setWindow] = useState("Toggle");
 
   switch (currentWindow) {
     case "Ingredients":
-      return <Ingredients />
+      return <Ingredients />;
     case "Unit":
-      return <Unit />
+      return <Unit />;
     case "Toggle":
-      return <Toggle />
+      return <Toggle />;
     case "Value":
-      return <Value />
+      return <Value />;
     case "Calculate":
-      return <Calculate />
+      return <Calculate />;
     case "Output":
-      return <Output />
+      return <Output />;
     default:
-      return <Ingredients />
+      return <Ingredients />;
   }
-}
+};
 
 export default Window;

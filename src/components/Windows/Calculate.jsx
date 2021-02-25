@@ -1,6 +1,4 @@
-import React from 'react';
+import React from "react";
 
-class Calculate extends React.Component{
-
-}
+class Calculate extends React.Component {}
 export default Calculate;
