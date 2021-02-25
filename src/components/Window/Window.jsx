@@ -6,7 +6,7 @@ import Value from "../Windows/Value";
 import Output from "../Windows/Output";
 
 const Window = () => {
-  const [currentWindow, setWindow] = useState("Output");
+  const [currentWindow, setWindow] = useState("Ingredients");
   const [ingredient, setIngredient] = useState("unselected");
   const [unit, setUnit] = useState("unselected");
   const [conversionSystem, setConversionSystem] = useState("unselected");
@@ -22,13 +22,13 @@ const Window = () => {
 
   switch (currentWindow) {
     case "Ingredients":
-      return <Ingredients ing={ingredient} handleClick={setIngredient} />;
+      return <Ingredients ing={ingredient} handleClick={setIngredient} updateWindow={setWindow} />;
     case "Unit":
-      return <Unit unit={unit} handleClick={setUnit} />;
+      return <Unit unit={unit} handleClick={setUnit} updateWindow={setWindow} />;
     case "Toggle":
-      return <Toggle conv={conversionSystem} handleClick={setConversionSystem} />;
+      return <Toggle conv={conversionSystem} handleClick={setConversionSystem} updateWindow={setWindow} />;
     case "Value":
-      return <Value amount={amount} handleClick={setAmount} />;
+      return <Value amount={amount} handleClick={setAmount} updateWindow={setWindow} />;
     case "Output":
       return <Output handleClick={reset} />;
     default:

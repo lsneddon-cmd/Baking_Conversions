@@ -9,11 +9,17 @@ const Value = (props) => {
       </p>
       <input
         type="number"
-        onChange={(event) => props.handleClick(event.target.value)}
-        onBlur={(event) => props.handleClick(event.target.value)}
+        onChange={(event) => {
+          props.handleClick(event.target.value);
+        }}
+        onBlur={(event) => {
+          props.handleClick(event.target.value);
+        }}
       />
       <p>Use a decimal for a fractional number</p>
-      <button>Let's Go!</button>
+      <button
+        onClick={() => props.updateWindow("Output")}
+      >Let's Go!</button>
     </div>
   );
 };

@@ -17,31 +17,46 @@ const Ingredients = (props) => {
         <p>{props.ing}</p>
         <button 
           className="flour-button" 
-          onClick={() => props.handleClick("flour")}
+          onClick={() => {
+            props.handleClick("flour");
+            props.updateWindow("Unit");
+          }}
         >
           Flour
         </button>
         <button 
           className="sugar-button"
-          onClick={() => props.handleClick("sugar")}
+          onClick={() => {
+            props.handleClick("sugar");
+            props.updateWindow("Unit");
+          }}
         >
           Sugar
         </button>
         <button
           className="butter-button"
-          onClick={() => props.handleClick("butter")}
+          onClick={() => {
+            props.handleClick("butter");
+            props.updateWindow("Unit");
+          }}
         >
           Butter
         </button>
         <button 
           className="cocoa-button"
-          onClick={() => props.handleClick("cocoa")}
+          onClick={() => {
+            props.handleClick("cocoa");
+            props.updateWindow("Unit");
+          }}
         >
           Cocoa
         </button>
         <button
           className="liquid-button"
-          onClick={() => props.handleClick("liquid")}
+          onClick={() => {
+            props.handleClick("liquid");
+            props.updateWindow("Unit");
+          }}
         >
           Liquid
         </button>
