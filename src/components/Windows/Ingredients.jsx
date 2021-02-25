@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 // clicking a button should update parent to
 // render Unit component and track which ingredient was clicked
 
-const Ingredients = () => {
-  const [ingredient, setIngredient] = useState("unselected");
+const Ingredients = (props) => {
 
   return (
     <div className="window-container">
@@ -15,25 +14,34 @@ const Ingredients = () => {
       </p>
       <p>What type of ingredient do you have to convert?</p>
       <div className="button-container">
-        <p>{ingredient}</p>
-        <button className="flour-button" onClick={() => setIngredient("flour")}>
+        <p>{props.ing}</p>
+        <button 
+          className="flour-button" 
+          onClick={() => props.handleClick("flour")}
+        >
           Flour
         </button>
-        <button className="sugar-button" onClick={() => setIngredient("sugar")}>
+        <button 
+          className="sugar-button"
+          onClick={() => props.handleClick("sugar")}
+        >
           Sugar
         </button>
         <button
           className="butter-button"
-          onClick={() => setIngredient("button")}
+          onClick={() => props.handleClick("butter")}
         >
           Butter
         </button>
-        <button className="cocoa-button" onClick={() => setIngredient("cocoa")}>
+        <button 
+          className="cocoa-button"
+          onClick={() => props.handleClick("cocoa")}
+        >
           Cocoa
         </button>
         <button
           className="liquid-button"
-          onClick={() => setIngredient("liquid")}
+          onClick={() => props.handleClick("liquid")}
         >
           Liquid
         </button>

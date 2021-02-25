@@ -11,6 +11,7 @@ const Value = () => {
       <input
         type="number"
         onChange={(event) => setAmount(event.target.value)}
+        onBlur={(event) => setAmount(event.target.value)}
       />
       <p>Use a decimal for a fractional number</p>
       <button>Let's Go!</button>

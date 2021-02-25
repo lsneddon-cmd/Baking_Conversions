@@ -3,15 +3,15 @@ import Ingredients from "../Windows/Ingredients.jsx";
 import Unit from "../Windows/Unit";
 import Toggle from "../Windows/Toggle";
 import Value from "../Windows/Value";
-import Calculate from "../Windows/Calculate";
 import Output from "../Windows/Output";
 
 const Window = () => {
-  const [currentWindow, setWindow] = useState("Output");
+  const [currentWindow, setWindow] = useState("Ingredients");
+  const [ingredient, setIngredient] = useState("unselected");
 
   switch (currentWindow) {
     case "Ingredients":
-      return <Ingredients />;
+      return <Ingredients ing={ingredient} handleClick={setIngredient} />;
     case "Unit":
       return <Unit />;
     case "Toggle":
