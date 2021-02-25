@@ -29,7 +29,7 @@ const Window = () => {
     case "Toggle":
       return <Toggle conv={conversionSystem} handleClick={setConversionSystem} updateWindow={setWindow} />;
     case "Value":
-      return <Value amount={amount} handleClick={setAmount} updateWindow={setWindow} />;
+      return <Value unit={unit} amount={amount} handleClick={setAmount} updateWindow={setWindow} />;
     case "Output":
       return (
          <Output 

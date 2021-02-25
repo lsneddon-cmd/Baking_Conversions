@@ -4,7 +4,7 @@ const Unit = (props) => {
 
   return (
     <div className="window-container">
-      <p>Which Unit of volume would you like to convert from? {props.unit}</p>
+      <p>Which Unit of volume would you like to convert from?</p>
       <button onClick={() => {
         props.handleClick("Cups");
         props.updateWindow("Toggle");

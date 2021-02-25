@@ -14,7 +14,7 @@ const App = () => {
       </div>
       <div className="footer">
         <p>
-          Bake Buddy 2020 by{" "}
+          Bake Buddy 2021 by{" "}
           <a target="blank" href="http://lewiscodes.io">
             Lewis Sneddon
           </a>

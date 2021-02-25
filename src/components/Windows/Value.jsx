@@ -5,7 +5,7 @@ const Value = (props) => {
   return (
     <div className="window-container">
       <p className="subheading">
-        Finally, how many ...pass props... do you have to convert? {props.amount}
+        Finally, how many {props.unit} do you have to convert?
       </p>
       <input
         type="number"

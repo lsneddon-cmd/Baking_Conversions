@@ -14,7 +14,6 @@ const Ingredients = (props) => {
       </p>
       <p>What type of ingredient do you have to convert?</p>
       <div className="button-container">
-        <p>{props.ing}</p>
         <button 
           className="flour-button" 
           onClick={() => {

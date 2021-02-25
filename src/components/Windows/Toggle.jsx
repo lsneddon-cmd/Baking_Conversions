@@ -4,7 +4,7 @@ const Toggle = (props) => {
 
   return (
     <div className="window-container">
-      <p>Which system are we converting from? {props.conv}</p>
+      <p>Which system are we converting from?</p>
       <button onClick={() => {
         props.handleClick("Imperial");
         props.updateWindow("Value");
