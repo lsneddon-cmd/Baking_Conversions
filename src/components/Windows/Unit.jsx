@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-class Unit extends React.Component{
-  render(){
-    return(
+const Unit = () => {
+
+  const [ unit, setUnit ] = useState("unselected");
+
+  return(
       <div className="window-container">
-        <p>Which Unit of volume would you like to convert from?</p>
-        <button>Cups</button>
-        <button>Teaspoon</button>
-        <button>Tablespoon</button>
-        <button>Fluid Oz</button>
-        <button>Fluid Dram</button>
+        <p>Which Unit of volume would you like to convert from? {unit}</p>
+        <button
+          onClick={() => setUnit("Cups")}
+        >Cups</button>
+        <button
+          onClick={() => setUnit("Teaspoon")}
+        >Teaspoon</button>
+        <button
+          onClick={() => setUnit("Tablespoon")}
+        >Tablespoon</button>
+        <button
+        onClick={() => setUnit("Fluid Oz")}
+        >Fluid Oz</button>
+        <button
+          onClick={() => setUnit("Fluid Dram")}
+        >Fluid Dram</button>
       </div>
     );
-  }
 }
 
 export default Unit;

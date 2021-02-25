@@ -8,7 +8,7 @@ import Output from '../Windows/Output';
 
 const Window = () => {
 
-  const [ currentWindow, setWindow ] = useState("Ingredients");
+  const [ currentWindow, setWindow ] = useState("Unit");
 
 
   switch (currentWindow) {
