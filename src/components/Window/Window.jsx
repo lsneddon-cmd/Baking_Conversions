@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Ingredients from '../Windows/Ingredients.jsx';
 import Unit from '../Windows/Unit';
 import Toggle from '../Windows/Toggle';
@@ -8,9 +8,10 @@ import Output from '../Windows/Output';
 
 const Window = () => {
 
-  const windowToRender = "Ingredients";
+  const [ currentWindow, setWindow ] = useState("Ingredients");
 
-  switch (windowToRender) {
+
+  switch (currentWindow) {
     case "Ingredients":
       return <Ingredients />
     case "Unit":
