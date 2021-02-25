@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Value = () => {
-  const [amount, setAmount] = useState(0);
+const Value = (props) => {
 
   return (
     <div className="window-container">
       <p className="subheading">
-        Finally, how many ...pass props... do you have to convert? {amount}
+        Finally, how many ...pass props... do you have to convert? {props.amount}
       </p>
       <input
         type="number"
-        onChange={(event) => setAmount(event.target.value)}
-        onBlur={(event) => setAmount(event.target.value)}
+        onChange={(event) => props.handleClick(event.target.value)}
+        onBlur={(event) => props.handleClick(event.target.value)}
       />
       <p>Use a decimal for a fractional number</p>
       <button>Let's Go!</button>
