@@ -6,7 +6,7 @@ const Output = (props) => {
       <p className="subheading">Converted!</p>
       <p>{``}</p>
       <button
-        onClick={() => props.handleClick("Ingredients")}
+        onClick={() => props.handleClick()}
       >Reset</button>
     </div>
   );
