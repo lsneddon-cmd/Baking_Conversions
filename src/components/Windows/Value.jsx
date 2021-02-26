@@ -1,6 +1,6 @@
 import React from "react";
 
-const Value = (props) => {
+function Value(props) {
 
   return (
     <div className="window-container">

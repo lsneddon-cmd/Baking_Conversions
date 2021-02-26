@@ -5,7 +5,7 @@ import Toggle from "../Windows/Toggle";
 import Value from "../Windows/Value";
 import Output from "../Windows/Output";
 
-const Window = () => {
+function Window() {
   const [currentWindow, setWindow] = useState("Ingredients");
   const [ingredient, setIngredient] = useState("unselected");
   const [unit, setUnit] = useState("unselected");

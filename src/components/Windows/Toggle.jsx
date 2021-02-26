@@ -1,6 +1,6 @@
 import React from "react";
 
-const Toggle = (props) => {
+function Toggle(props) {
 
   return (
     <div className="window-container">

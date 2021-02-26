@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Output = (props) => {
+function Output(props) {
   useEffect(() => {
     props.onCalculate(performCalculation(props));
   });

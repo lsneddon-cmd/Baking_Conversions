@@ -1,6 +1,6 @@
 import React from "react";
 
-const Unit = (props) => {
+function Unit(props) {
 
   return (
     <div className="window-container">
