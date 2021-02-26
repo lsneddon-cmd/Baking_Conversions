@@ -1,8 +1,5 @@
 import React from "react";
 
-// clicking a button should update parent to
-// render Unit component and track which ingredient was clicked
-
 const Ingredients = (props) => {
 
   return (
