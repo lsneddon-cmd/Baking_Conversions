@@ -9,11 +9,7 @@ function Value(props) {
       </p>
       <input
         type="number"
-        onKeyPress={(event) => {
-          if (!/[0-9]/.test(event.key)) {
-            event.preventDefault();
-          }
-        }}
+        min="0"
         onChange={(event) => {
           props.handleClick(event.target.value);
         }}
